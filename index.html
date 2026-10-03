@@ -31,12 +31,17 @@
   }
 
   nav {
-    position: sticky;
-    top: env(safe-area-inset-top, 0px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background: var(--bg);
     border-bottom: 1px solid var(--rule);
     z-index: 100;
     padding: 0 2rem;
+  }
+  body {
+    padding-top: 3rem;
   }
   nav ul {
     display: flex;
